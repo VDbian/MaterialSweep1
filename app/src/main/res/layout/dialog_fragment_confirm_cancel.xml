@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:text="@string/soft_update_title"
+        android:textSize="32px"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorLogin"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="156px"
+        android:layout_below="@+id/textView_dialog_title"
+        android:text="@string/soft_update_info"
+        android:textSize="36px"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

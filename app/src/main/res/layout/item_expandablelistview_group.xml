@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_marginTop="16px"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/textView_org_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:text="@string/org_name"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"/>
+
+            <TextView
+                android:id="@+id/textView_org_name_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="一二三四五"
+                android:layout_marginLeft="8px"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16px"
+            >
+            <TextView
+                android:id="@+id/textView_doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/doc_name"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"
+                />
+
+            <TextView
+                android:id="@+id/textView_doc_name_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:text="一二三四五"
+                android:textColor="@color/colorMainText"
+                android:layout_gravity="center_vertical"
+                android:textSize="34px"
+                android:typeface="serif"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/textView_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:layout_gravity="center_vertical"
+                android:text="@string/out_time"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"
+                />
+
+            <TextView
+                android:id="@+id/textView_out_time_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_gravity="center_vertical"
+                android:text="2017-7-12"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16px"
+            >
+            <TextView
+                android:id="@+id/textView_out_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/out_username"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"
+                />
+
+            <TextView
+                android:id="@+id/textView_out_username_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:text="一二三四五"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorMainText"
+                android:textSize="34px"
+                android:typeface="serif"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

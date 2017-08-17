@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.fei.materialsweep"
+        minSdkVersion 19
+        targetSdkVersion 25
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+//    compile 'com.thoughtworks.xstream:xstream:1.4.7'
+    testCompile 'junit:junit:4.12'
+    //自动px适配
+    compile 'com.zhy:autolayout:1.4.5'
+    //调用接口
+    compile files('libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar')
+    //listview左滑删除
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    //智联天地扫描
+    compile files('libs/zltd_common.jar')
+    //解析xml为实体类
+    compile files('libs/xstream-1.4.jar')
+}

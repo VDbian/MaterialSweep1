@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_outbound"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/single_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_scan" />
+
+            <RadioButton
+                android:id="@+id/continuous_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continuous_scan" />
+
+            <RadioButton
+                android:id="@+id/key_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/key_scan" />
+        </RadioGroup>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="178px"
+        android:background="@drawable/shape_background_title">
+        <RelativeLayout
+            android:id="@+id/relativeLayout_back"
+            android:layout_width="128px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32px"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/repeat"
+                android:tint="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24px"
+                />
+
+            <TextView
+                android:id="@+id/textView_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_toRightOf="@+id/imageView_back"
+                android:text="@string/back"
+                android:typeface="serif"
+                android:textColor="@color/colorWhite"
+                android:textSize="38px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24px"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16px"
+            android:text="@string/outbound"
+            android:typeface="serif"
+            android:textColor="@color/colorWhite"
+            android:textSize="44px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@id/relativeLayout_title"
+        android:layout_marginTop="4px">
+
+        <include
+            android:id="@+id/item_header"
+            layout="@layout/item_list_view_outbound_header"></include>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="126px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:background="@drawable/shape_button_login"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="42px" />
+<LinearLayout
+    android:id="@+id/linearLayout_choose_org_and_doc"
+    android:layout_above="@+id/button_submit"
+    android:layout_marginBottom="16px"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        >
+        <TextView
+            android:id="@+id/textView_shop"
+            android:layout_width="126px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:text="@string/org_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="40px"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_shop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/textView_shop"
+            android:layout_marginRight="32px"
+            >
+        </Spinner>
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView_shop"-->
+        <!--android:layout_width="48px"-->
+        <!--android:layout_height="48px"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@mipmap/arrow_right"-->
+        <!--android:tint="#C7C7CC"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="32px"-->
+        <!--/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/textView_shop_show"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="32px"-->
+        <!--android:layout_marginRight="32px"-->
+        <!--android:layout_toRightOf="@+id/textView_shop"-->
+        <!--android:layout_toLeftOf="@+id/imageView_shop"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:gravity="center_vertical"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/line_password_worktaem"
+        >
+
+        <TextView
+            android:id="@+id/textView_doctor"
+            android:layout_width="126px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:text="@string/doc_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="40px"
+            android:typeface="serif"
+            />
+        <Spinner
+            android:id="@+id/spinner_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/textView_doctor"
+            android:layout_marginRight="32px"
+            >
+        </Spinner>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView_doctor"-->
+        <!--android:layout_width="48px"-->
+        <!--android:layout_height="48px"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@mipmap/arrow_right"-->
+        <!--android:tint="#C7C7CC"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="32px"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView_doctor_show"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="32px"-->
+        <!--android:layout_marginRight="32px"-->
+        <!--android:layout_toRightOf="@+id/textView_doctor"-->
+        <!--android:layout_toLeftOf="@+id/imageView_doctor"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:gravity="center_vertical"-->
+        <!--/>-->
+    </RelativeLayout>
+</LinearLayout>
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/swipeMenuListView_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout_choose_org_and_doc"
+        android:layout_below="@+id/linearLayout_header"
+        android:layout_marginBottom="34px"
+        android:layout_marginTop="2px"
+        >
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48px"
+        android:text="@string/technical_support"
+        android:textColor="@color/colorTextColor"
+        android:textSize="28px"
+        android:typeface="serif"
+        />
+
+</RelativeLayout>

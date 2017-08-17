@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88px"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:divider="@drawable/shape_linearlayout_mid_v"
+        android:showDividers="middle"
+
+        >
+
+        <TextView
+            android:id="@+id/textView_tarr_name"
+            android:layout_width="196px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/tarr_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="38px"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:id="@+id/textView_unit"
+            android:layout_width="126px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/unit"
+            android:textColor="@color/colorBlack"
+            android:textSize="38px"
+            android:typeface="serif"/>
+
+        <TextView
+            android:id="@+id/textView_spec"
+            android:layout_width="126px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/spec"
+            android:textColor="@color/colorBlack"
+            android:textSize="38px"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:layout_width="126px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/price"
+            android:textColor="@color/colorBlack"
+            android:textSize="38px"
+            android:typeface="serif"
+            />
+        <TextView
+            android:id="@+id/textView_num"
+            android:layout_width="126px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/num"
+            android:textColor="@color/colorBlack"
+            android:textSize="38px"
+            android:typeface="serif"
+            />
+    </LinearLayout>
+</LinearLayout>
