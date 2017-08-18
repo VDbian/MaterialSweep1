@@ -143,7 +143,7 @@ public class ListViewOutboundAdapter extends BaseAdapter implements View.OnTouch
         TextView textViewUnit;
         TextView textViewSpec;
         TextView textViewPrice;
-//        TextView textViewTarrAttr;
+        //        TextView textViewTarrAttr;
         EditText editTextNum;
     }
 }
