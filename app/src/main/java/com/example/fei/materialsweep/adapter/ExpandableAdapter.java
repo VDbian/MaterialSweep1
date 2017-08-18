@@ -33,25 +33,6 @@ public class ExpandableAdapter extends BaseExpandableListAdapter {
             OutChildBean outChildBean = new OutChildBean("材料名称", "单位", "规格", "批次", "数量");
             List<OutChildBean> outChildBeanList = new ArrayList<>();
             outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-            outChildBeanList.add(outChildBean);
-
-
-
-
             outChildBeanList.addAll(outBean.getItems());
             outBean.setItems(outChildBeanList);
             mList.add(outBean);
