@@ -21,7 +21,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         CrashHander crashHander =CrashHander.getInstance();
-//        crashHander.init(this);
+        crashHander.init(this);
     }
 
 }
